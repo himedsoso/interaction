@@ -1,0 +1,14 @@
+<form (ngSubmit)="ajouter()" #catForm="ngForm">
+    
+    <label for="">name</label>
+    <input name="name" [(ngModel)]="cat.name" type="text" required>
+    <label for="">race</label>
+    <input name="race" [(ngModel)]="cat.race" type="text" required>
+    <label for="">date</label>
+    <input name="date" [(ngModel)]="cat.date" type="date" required>
+    <label for="">image</label>
+    <input name="picture" [(ngModel)]="cat.picture" type="text" required>
+    <button [disabled]="catForm.invalid" type="submit">ajouter</button>
+</form>
+
+

@@ -1,0 +1,5 @@
+<app-create-kitten (chat)="createCat($event)"></app-create-kitten>
+<div>
+  <app-list-kitten (indexCat)="indexCat($event)"[listKitten]="cats"></app-list-kitten>
+<app-user-kitten [userKitten]="userKitten"></app-user-kitten>
+</div>
